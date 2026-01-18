@@ -80,7 +80,7 @@ int main(void)
     while (fgets(line, sizeof(line), in))  // Чете HTML файла ред по ред, докато не стигне края
     {
         if (strstr(line, "<!-- TRANSPORT -->")) // Проверява дали редът съдържа маркера за транспорт
-            fprintf(out, "<td>%.2f</td>\n", transport); // Записва стойността за електричество
+            fprintf(out, "<td>%.2f</td>\n", transport); // Записва стойността за транспорт
 
         else if (strstr(line, "<!-- ELECTRICITY -->")) // Проверява дали редът съдържа маркера за електричество
             fprintf(out, "<td>%.2f</td>\n", electricity); // Записва стойността за електричество
